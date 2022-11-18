@@ -1,0 +1,112 @@
+body{
+    margin:0;
+    padding:0;
+    background: url("../images/background.avif");
+    background-size: cover;
+    background-position: 25% 60%;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+.Form-container{
+    display: flex;
+    /* width: 95%; */
+    max-width: 1200px;
+    margin: 5em auto;
+}
+.first-column{
+    width: 40%;     
+    background: #51C8BC;
+    box-shadow: 0px 0px 10px 9px rgba(186, 186, 186, 0.25);
+    border-radius: 26px;
+    font-family: 'Humnst777 Blk BT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 55px;
+    /* text-align: center;  */
+    color: #FFFFFF;
+    padding: 0 0.5em;
+
+}
+.first-column p{
+    margin-top: 0;
+}
+.second-column{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    width: 60%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 9px rgba(186, 186, 186, 0.25);
+    border-radius: 26px;
+    padding: 2em 1.5em 0 3em;
+}
+input{
+    width: 100%;
+    margin-bottom: 1em;
+    border:1px solid #F3F3F3;
+    padding:0.5em;
+}
+.checkbox{
+    width: 15px;
+}
+button{
+    background: #3BADCD;
+    border-radius: 5px;
+    border: none;
+    padding: 0.8em 3em;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.sign-up{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 35px;
+    letter-spacing: 0.08em;
+    color: #000000;
+}
+.sign-up p{
+    margin-top: 0;
+}
+.already{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.08em;
+    color:#BEBCBC;
+    text-align:center
+
+}
+span{
+    color:#3BADCD;
+}
+@media (max-width:629px){
+    .Form-container{
+        flex-direction: column;
+        margin: 0;
+    }
+    .first-column,.second-column{
+        width: 100%;
+        min-height: 30vh;
+    }
+    /* .second-column{
+        padding: 0 1em 0 1em;
+    } */
+    .sign-up{
+        font-size: 0.8em;
+    }
+    .Form-container{
+        margin: 0;
+    }
+}
